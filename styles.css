@@ -1,0 +1,428 @@
+:root {
+    --text-color: #cfcfcf;
+    --link-color: #ffffff;
+    --background-color: #171717;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--background-color);
+   
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+h2{
+   
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+nav .right a:hover{
+    color: rgb(0, 106, 255);
+    transition: .2s;
+}
+
+/*SECTION 1: HERO*/
+.hero-section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 50px;
+margin: 50px 0;
+gap: 40px;
+margin-bottom: 100px;
+}
+
+.hero-section .text{
+    flex: 5;
+}
+
+.hero-section .text h2{
+    font-size: 45px;
+     color: var(--link-color);
+}
+
+p{
+    color:var(--text-color);
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img{
+    border-radius: 50%;
+    width: 400px;
+    box-shadow: 10px 10px 10px 1px var(--link-color);
+    transition: .5s;
+}
+.hero-section .text .links{
+    margin-top: 25px;
+}
+
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.hero-section .text .links a:hover{
+    color: rgb(0, 106, 255);
+    transition: .2s;
+    border: 2px solid rgb(0, 106, 255);
+}
+
+.hero-section .headshot img:hover{
+    box-shadow: 10px 10px 10px 10px var(--link-color);
+}
+
+/*SECTION 2: SKILLS*/
+
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+    color: var(--link-color);
+}
+
+.skills-section .text{
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 165px;
+    padding: 10px 20px;
+
+    border: 1.5px solid var(--text-color);
+    border-radius: 5px;
+    margin: 10px;
+    color: var(--link-color);
+}
+
+.skills-section .cells .cell i{
+color: var(--text-color);
+padding: 0 10px;
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+}
+
+.skills-section .cells .cell:hover{
+    transition: .2s;
+    cursor: default;
+    color: rgb(0, 106, 255);
+    box-shadow: 0px 0px 10px  var(--link-color)
+}
+
+/*SECTION 3: PROJECTS*/
+
+.projects-section{
+    padding: 0 50px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-section h2{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: var(--link-color);
+}
+
+.projects-section h1{
+    text-align: center;
+    font-size: 19px;
+    color: var(--link-color);
+    margin-bottom: -120px;
+}
+
+.projects-section .first-project video{
+    padding: 0 50px;
+    display: block;
+    margin: auto auto;
+}
+
+img:hover{
+    transition: .2s;
+    cursor: default;
+    color: rgb(0, 106, 255);
+    box-shadow: 0px 0px 10px  var(--link-color)
+}
+
+.projects-section .second-project video{
+    padding: 0 50px;
+    display: block;
+    margin: auto auto;
+    margin-bottom: -350px;
+    
+}
+
+.projects-section .second-project h1{
+    margin-top: -90px;
+}
+
+.projects-section .third-project h1{
+
+    padding: 0 50px;
+    padding-top: 240px;
+    margin: auto;
+}
+
+
+.projects-section img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 765px;
+    height: auto;
+}
+
+.projects-section .fourth-project h1{
+
+    padding: 0 50px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.projects-section .fifth-project img{
+    margin-top: 20px;
+}
+
+.projects-section .fifth-project h1{
+
+    padding: 0 50px;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info .contact-info{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+.contact-section h2{
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 35px;
+    color: var(--link-color);
+}
+
+.contact-info{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: auto;
+}
+
+.contact-info a{
+    align-items: center;
+    color: var(--text-color);
+    margin: auto;
+    margin: 0 10px;
+}
+
+.contact-info a:hover{
+    color: rgb(0, 106, 255);
+    transition: .2s;
+}
+
+
+@media (max-width: 600px){
+    /*SECTION 1: HERO*/
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px){
+    /*SECTION 1: HERO*/
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+
+    .hero-section .headshot img{
+        width: 325px;
+    }
+}
+
+@media (max-width: 600px){
+    /*NAVBAR*/
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .right a{
+        font-size: 22px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+    .contact-info a span{
+        display: none;
+    }
+
+    .contact-info a{
+        font-size: 30px;
+    }
+
+
+    /*SECTION 1: HERO*/
+    .hero-section {
+        padding: 0 20px;
+    }
+
+    .hero-section .text h2{
+        font-size: 25px;
+    }
+
+    .hero-section .links{
+        justify-content: center;
+    }
+
+    /*SECTION 2: SKILLS*/
+    .skills-section{
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cell span{
+        font-size: 16px;
+    } 
+    
+
+}
+
+@media (max-width: 970px){
+    .hero-section .text .links a{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 976px){
+    /*SECTION 3: PROJECTS*/
+    .projects-section .first-project video{
+        height: auto;
+        width: 100%;
+        padding: 0 50px;
+        display: block;
+        margin: auto auto;
+    }
+
+    .projects-section .second-project video{
+        height: auto;
+        width: 100%;
+        padding: 0 50px;
+        display: block;
+        margin: auto auto;
+    }
+
+    .projects-section h1{
+        text-align: center;
+        font-size: 19px;
+        color: var(--link-color);
+        margin-bottom: 0px;
+    }
+
+    .projects-section .second-project h1{
+        padding-top: 50px;
+        margin:auto;
+    }
+    
+    .projects-section .third-project h1{
+        padding-top: 60px;
+    }
+    
+}
